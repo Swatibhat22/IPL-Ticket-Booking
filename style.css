@@ -1,4 +1,4 @@
-:root {
+ :root {
     --primary-color: #1e3a8a;
     --accent-color: #f59e0b;
     --background-color: #f3f4f6;
@@ -244,4 +244,145 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+
+/* Activity 3 */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    position: static;
+    width: auto;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+#matches {
+    overflow-x: auto;
+}
+
+#matches table {
+    min-width: 800px;
+}
+
+
+#my-bookings {
+    overflow-x: auto;
+}
+
+#my-bookings table {
+    min-width: 700px;
+}
+
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav li {
+        margin: 5px 10px;
+    }
+
+    .booking-container {
+        grid-template-columns: 1fr;
+    }
+
+    .guidelines-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #home h2 {
+        font-size: 28px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 6px 0;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    section {
+        padding: 15px;
+        margin: 20px 0;
+    }
+
+    #home {
+        padding: 40px 15px;
+    }
+
+    #home h2 {
+        font-size: 24px;
+    }
+
+    #home p {
+        font-size: 16px;
+    }
+
+    button {
+        width: 90%;
+        margin: 5px auto;
+    }
+
+    .booking-container {
+        grid-template-columns: 1fr;
+    }
+
+    .guidelines-container {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-form,
+    .booking-summary,
+    .guideline-card {
+        padding: 15px;
+    }
+
 }
