@@ -119,9 +119,8 @@
                             <td>2500</td> 
                             <td>5000</td> 
                             <td>
-                                <a href="#booking">
-                                    <button>Book</button>
-                                </a>
+                               <a href="#booking">
+                                    <button class="bookticket">Book Ticket</button>                                </a>
                             </td> 
                         </tr> 
 
@@ -136,7 +135,7 @@
                             <td>6000</td> 
                             <td>
                                 <a href="#booking">
-                                    <button>Book</button>
+                                    <button class="bookticket">Book Ticket</button>
                                 </a>
                             </td> 
                         </tr> 
@@ -152,8 +151,7 @@
                             <td>6500</td> 
                             <td>
                                 <a href="#booking">
-                                    <button>Book</button>
-                                </a>
+                                    <button class="bookticket">Book Ticket</button>                                </a>
                             </td> 
                         </tr> 
 
@@ -168,7 +166,7 @@
                             <td>7000</td> 
                             <td>
                                 <a href="#booking">
-                                    <button>Book</button>
+                                    <button class="bookticket">Book Ticket</button>
                                 </a>
                             </td> 
                         </tr> 
@@ -188,8 +186,7 @@
 
                     <div class="booking-form">
 
-                <form action="/confirm" method="post"> 
-
+                        <form id="bookingForm">
                     <label>Match:</label> 
                     <select name="match" required> 
                         <option value="">Select Match</option> 
@@ -326,7 +323,8 @@
             </p>
 
         </footer>
-
+        <div id="toast">Booking section opened!</div>
+        <script src="app.js"></script>
     </body> 
 </html>
 
