@@ -31,11 +31,6 @@ document.addEventListener("DOMContentLoaded", function() {
         const stand = bookingForm.elements["stand"].value;
         const tickets = bookingForm.elements["tickets"].value;
 
-        const name = bookingForm.elements["name"].value;
-        const email = bookingForm.elements["email"].value;
-        const phone = bookingForm.elements["phone"].value;
-
-
         let ticketPrice;
 
         if (stand === "General") {
@@ -48,12 +43,9 @@ document.addEventListener("DOMContentLoaded", function() {
             ticketPrice = 5000;
         }
 
-
         const totalAmount = ticketPrice * tickets;
 
-
         const bookingId = "IPL" + Math.floor(Math.random() * 9000 + 1000);
-
 
         const newRow = document.createElement("tr");
 
@@ -65,15 +57,11 @@ document.addEventListener("DOMContentLoaded", function() {
             <td>${totalAmount}</td>
         `;
 
-
         bookingTable.appendChild(newRow);
-
 
         showToast("Your ticket has been booked successfully!");
 
-
         bookingForm.reset();
-
 
         document.getElementById("my-bookings").scrollIntoView({
             behavior: "smooth"
@@ -95,5 +83,13 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 2000);
 
     }
+
+
+    // Activity 5 - DOM Manipulation
+
+    const demo = document.getElementById("demo");
+
+    demo.textContent =
+        "IPL 2026 features exciting matches between top cricket teams across India. Fans can enjoy live matches and book tickets for their favourite teams.";
 
 });
